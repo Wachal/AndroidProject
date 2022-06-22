@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">AndroidZaliczenie</string>
+
+    <string-array name="codes_names">
+        <item>Drzewo</item>
+        <item>Krzew</item>
+        <item>Kwiat</item>
+    </string-array>
 </resources>
