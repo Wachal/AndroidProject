@@ -18,7 +18,7 @@ class AddPlantsActivity : AppCompatActivity() {
 
         safeButton.setOnClickListener{
             val name = findViewById<EditText>(R.id.namePlant)
-            val category = findViewById<Spinner>(R.id.spinner).toString()
+            val category = findViewById<Spinner>(R.id.spinner).getSelectedItem().toString()
             val description = findViewById<EditText>(R.id.descriptionPlant)
 
             var newPlant = Plants(name.text.toString(), category, description.text.toString())

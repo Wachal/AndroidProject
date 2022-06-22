@@ -5,6 +5,8 @@
       <map>
         <entry key="app/src/main/res/layout/activity_add_plants.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_plants_list.xml" value="0.35625" />
+        <entry key="app/src/main/res/layout/activity_single_plant.xml" value="0.33" />
       </map>
     </option>
   </component>
