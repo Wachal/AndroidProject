@@ -25,6 +25,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(i)
         }
 
+        //renderowanko listy nazw roslin z itemList
         fun renderList(){
             for(i in itemsList.indices){
                 val textVieww = TextView(this)

@@ -6,6 +6,7 @@ import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Spinner
+import android.widget.Toast
 
 class AddPlantsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -13,6 +14,7 @@ class AddPlantsActivity : AppCompatActivity() {
         setContentView(R.layout.activity_add_plants)
 
         val safeButton = findViewById<Button>(R.id.button2)
+
 
         safeButton.setOnClickListener{
             val name = findViewById<EditText>(R.id.namePlant)
@@ -24,9 +26,11 @@ class AddPlantsActivity : AppCompatActivity() {
 
 //            Log.d("adv", name.text.toString())
 
+            //powiadomienie toast
+            Toast.makeText(applicationContext, "Utworzono nową roślinę: " + name.text.toString(), Toast.LENGTH_LONG).show()
+
             name.setText("")
             description.setText("")
-
         }
     }
 }
