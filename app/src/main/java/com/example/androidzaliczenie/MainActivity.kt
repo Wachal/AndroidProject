@@ -17,6 +17,8 @@ class MainActivity : AppCompatActivity() {
         //pobranie butona
         val addButton = findViewById<Button>(R.id.button)
         val showListButton = findViewById<Button>(R.id.button3)
+        val mapButton = findViewById<Button>(R.id.button4)
+        val videoButton = findViewById<Button>(R.id.button5)
 
         //obsluga guzika dodaj - otwiera formularz
         addButton.setOnClickListener{
@@ -27,6 +29,16 @@ class MainActivity : AppCompatActivity() {
         showListButton.setOnClickListener{
             val b = Intent(this, ActivityPlantsList::class.java)
             startActivity(b)
+        }
+
+        mapButton.setOnClickListener {
+            val c = Intent(this, ActivityMaps::class.java)
+            startActivity(c)
+        }
+
+        videoButton.setOnClickListener {
+            val a = Intent(this, ActivityVideo::class.java)
+            startActivity(a)
         }
 
     }
