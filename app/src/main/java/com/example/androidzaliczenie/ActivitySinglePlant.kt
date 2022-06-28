@@ -1,10 +1,10 @@
 package com.example.androidzaliczenie
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.LinearLayout
 import android.widget.TextView
+import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 
 class ActivitySinglePlant : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -15,6 +15,7 @@ class ActivitySinglePlant : AppCompatActivity() {
         val textElementCategory = findViewById<TextView>(R.id.textViewCategory)
         val textElementDescription = findViewById<TextView>(R.id.textViewDescription)
         val shareButton = findViewById<TextView>(R.id.shareButton)
+        val deleteButton = findViewById<TextView>(R.id.buttonDelete)
 
 
         //pobranie intecji ktora ma w sobie numer obiektu w liscie
@@ -35,6 +36,14 @@ class ActivitySinglePlant : AppCompatActivity() {
             }
             intent.putExtra(Intent.EXTRA_TEXT, textToShare)
             startActivity(intent)
+        }
+
+        //Usuwanie obiektu
+        deleteButton.setOnClickListener {
+            itemsList.removeAt(plantNumber)
+
+            Toast.makeText(applicationContext, "Usunięto roślinę: " + itemsList[plantNumber].name, Toast.LENGTH_LONG).show()
+            navigateUpTo(Intent(baseContext, MainActivity::class.java))
         }
     }
 }

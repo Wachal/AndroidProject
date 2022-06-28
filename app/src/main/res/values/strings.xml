@@ -1,10 +1,10 @@
 <resources>
-    <string name="app_name">AndroidZaliczenie</string>
+    <string name="app_name">Zielnik</string>
 
     <string-array name="codes_names">
         <item>Drzewo</item>
         <item>Krzew</item>
         <item>Kwiat</item>
     </string-array>
-    <string name="title_activity_maps">ActivityMaps</string>
+    <string name="title_activity_maps">Mapa roślin</string>
 </resources>

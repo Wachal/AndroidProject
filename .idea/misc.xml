@@ -3,6 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Arek/Documents/CDV/6 semestr/Android/Projekt zaliczeniowy git/AndroidProject/app/src/main/res/layout/activity_add_plants.xml" value="0.2269021739130435" />
+        <entry key="..\:/Users/Arek/Documents/CDV/6 semestr/Android/Projekt zaliczeniowy git/AndroidProject/app/src/main/res/layout/activity_main.xml" value="0.2269021739130435" />
+        <entry key="..\:/Users/Arek/Documents/CDV/6 semestr/Android/Projekt zaliczeniowy git/AndroidProject/app/src/main/res/layout/activity_plants_list.xml" value="0.2269021739130435" />
+        <entry key="..\:/Users/Arek/Documents/CDV/6 semestr/Android/Projekt zaliczeniowy git/AndroidProject/app/src/main/res/layout/activity_single_plant.xml" value="0.2269021739130435" />
+        <entry key="..\:/Users/Arek/Documents/CDV/6 semestr/Android/Projekt zaliczeniowy git/AndroidProject/app/src/main/res/layout/activity_video.xml" value="0.2269021739130435" />
         <entry key="app/src/main/res/layout/activity_add_plants.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_plants_list.xml" value="0.35625" />

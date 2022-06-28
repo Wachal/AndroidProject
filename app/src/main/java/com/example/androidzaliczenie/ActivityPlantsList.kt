@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.util.TypedValue
 import android.widget.LinearLayout
 import android.widget.TextView
+import androidx.core.view.marginBottom
 
 class ActivityPlantsList : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -38,7 +39,8 @@ class ActivityPlantsList : AppCompatActivity() {
             }
         }else{
             val textView = TextView(this)
-            textView.text = "nie masz żadnych roślin"
+            textView.text = "Brak roślin do wyświetlenia"
+            textView.setTextSize(TypedValue.COMPLEX_UNIT_SP, 20F)
             listShow.addView(textView)
         }
     }
